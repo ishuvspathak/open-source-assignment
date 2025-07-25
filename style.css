@@ -1,0 +1,115 @@
+/* ==== Global Styles ==== */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #f4f4f4;
+    padding: 30px;
+}
+
+/* ==== Heading ==== */
+h2 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px #000;
+    margin-bottom: 30px;
+}
+
+/* ==== Links (Buttons) ==== */
+a {
+    background: #ff4b2b;
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 8px;
+    margin: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 75, 43, 0.5);
+}
+
+a:hover {
+    background: #ff6f61;
+    transform: translateY(-2px);
+}
+
+/* ==== Table ==== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    color: #333;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 15px 20px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background: #0f2027;
+    color: #fff;
+}
+
+tr:hover {
+    background-color: #f2f2f2;
+}
+
+/* ==== Form ==== */
+form {
+    background: #ffffff;
+    color: #333;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+}
+
+input[type="text"],
+input[type="date"],
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+input[type="submit"] {
+    background: #00b09b;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 15px rgba(0,176,155,0.4);
+}
+
+input[type="submit"]:hover {
+    background: #00d7b9;
+    transform: scale(1.05);
+}
+
+/* ==== Responsive ==== */
+@media (max-width: 768px) {
+    table, th, td {
+        font-size: 14px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+}
